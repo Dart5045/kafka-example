@@ -10,7 +10,7 @@ public class KafkaListeners {
              topics = "mylearning",
             groupId = "groupId"
     )
-    void listener(String data){
+    void listener(Message data){
         System.out.println("Listener received "+ data + " ");
     }
 }
